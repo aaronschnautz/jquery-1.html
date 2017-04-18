@@ -11,6 +11,19 @@
     $('h1').text('New headline');
     $('h2').text('A Wikipedia article');
   }
+  function logHeadlines() {
+    var h1 = $('h1').text();
+    console.log(h1);
+    var h2 = $('h2').text();
+    console.log(h2);
+  }
+  function swapHeadlines() {
+    var h1 = $('h1').text();
+    var h2 = $('h2').text();
+    $('h2').text(h1);
+    $('h1').text(h2);
+
+  }
   </script>
   <title>jQuery test page</title>
 </head>
